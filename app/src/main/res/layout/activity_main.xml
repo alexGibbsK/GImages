@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alex.gimages.MainActivity">
+
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:layout_width="784dp"
+        android:layout_height="1175dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="48dp"
+            android:text="SCAN" />
+
+        <View
+        android:id="@+id/focus_thief"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="289dp"
+            android:ems="10"
+            android:inputType="textUri"
+            android:text="Scanned URL"
+            android:layout_below="@+id/imageView3"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
